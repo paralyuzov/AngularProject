@@ -1,0 +1,50 @@
+.sidebar {
+    width: 213px;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    background-color: #2E2E2E;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h3 {
+    color:#FFF;
+    font-family: Jura,sans-serif;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid #FFF;
+}
+
+
+.options a {
+    text-decoration: none;
+    color:#FFF;
+    font-family: Jura,sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 2px solid grey;
+}
+
+.options a:hover {
+    background-color: #4f4b4b;
+}
+
+.createPlayList {
+    margin-top: 3em;
+    font-family: Jura,sans-serif;
+    background-color: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    font-size: 24px;
+    color: #A6FF14;
+    cursor: pointer;
+}
+
+.createPlayList:hover {
+    color: #95b95a;
+}

@@ -1,0 +1,10 @@
+<div class="artists-wrapper">
+  <div class="artist-box">
+    <div *ngFor="let artist of artistList.slice(0, 5)" class="artist-card">
+      <div class="media">
+        <img src="{{ artist.imageUrl }}" alt="" />
+      </div>
+      <p class="artist">{{ artist.name }}</p>
+    </div>
+  </div>
+</div>

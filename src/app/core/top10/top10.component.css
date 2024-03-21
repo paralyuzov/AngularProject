@@ -1,0 +1,90 @@
+.wrapper {
+    border: 1px solid rgb(39, 39, 39);
+    margin-left: 2.6em ;
+    background-color: #2E2E2E;
+}
+
+
+.title {
+    display: flex;
+    gap:2.2em;
+    font-family: "Jura",sans-serif;
+    padding: 0.1em 0em;
+    border-bottom: 1px solid #FFF;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.title .white {
+    color:#fff;
+}
+
+.title .green {
+    color:#A6FF14;
+    font-size: 30px;
+    font-weight: bold;
+}
+.card {
+    display: flex;
+    gap:0.5em;
+    border-top: 1px solid rgb(78, 77, 77);
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: #f6f6f6 0px 0px 0px 1px;
+}
+
+.media img {
+    width: 77px;
+    height: auto;
+    object-fit:fill;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+
+}
+
+.card .info {
+    padding: 0.2em;
+}
+
+.card .info p {
+    padding: 0.1em 0em;
+}
+
+.card .artist {
+    color:#FFF;
+    font-size: 14px;
+    font-family: "Jura",sans-serif;
+    font-weight: bold;
+}
+
+.card .song {
+    color:#878282;
+    font-size: 12px;
+    font-family: "Jura",sans-serif;
+}
+
+.fa-play {
+    color:#d0cdcd;  
+}
+
+.fa-play:hover {
+    color:#a6ff14;
+}
+
+.fa-plus {
+    color:#d0cdcd;
+}
+
+.fa-plus:hover{
+    color:#a6ff14;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+}

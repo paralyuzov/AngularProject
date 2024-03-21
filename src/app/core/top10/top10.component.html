@@ -1,0 +1,27 @@
+<div class="top10">
+  <div class="wrapper">
+    <div class="title">
+      <span class="white">MusicLibrary</span>
+      <span class="green">TOP10</span>
+    </div>
+
+    <div class="card-wrapper">
+      <div
+        *ngFor="let list of top10List.slice(0, 10); let i = index"
+        class="card"
+      >
+        <div class="media">
+          <img src="{{ list.imageUrl }}" alt="" />
+        </div>
+        <div class="info">
+          <p class="artist">{{ i + 1 }}.{{ list.artist }}</p>
+          <p class="song">{{ list.songName }}</p>
+        </div>
+        <div class="buttons">
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="new-releases">
+  <p class="tittle">New Realeses</p>
+  <div class="card-wrapper">
+    <div class="card-holder">
+      <div *ngFor="let realese of releasesList" class="card-box">
+        <div class="media">
+          <img src="{{ realese.imageUrl }}" alt="pic" />
+        </div>
+        <div class="info-card">
+          <p class="album">{{ realese.songName }}</p>
+          <p class="artist">{{ realese.artist }}</p>
+          <p class="label">{{ realese.label }}</p>
+          <div class="buttons">
+            <i class="fa-solid fa-play" (click)="loadFile(realese.audioUrl)"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

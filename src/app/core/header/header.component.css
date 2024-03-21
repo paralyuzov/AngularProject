@@ -1,0 +1,56 @@
+li {
+    list-style: none outside;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 0.5em 2em;
+  }
+  
+  .options ul {
+    display: flex;
+    gap: 3em;
+  }
+  
+  .options a:hover {
+    color: #a6ff14;
+  }
+  
+  .register ul {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .logo-text {
+    font-size: 40px;
+  }
+  
+  .logo-text i {
+    font-size: 30px;
+  }
+  
+  .options a {
+    font-size: 20px;
+    font-family: Jura, sans-serif;
+  }
+  
+  .search input {
+    background-color: #404040;
+    color: #fff;
+    margin-right: 0.5em;
+  }
+  
+  
+  .register a:hover {
+    color: #a6ff14;
+  }
+  
