@@ -1,10 +1,11 @@
 .artists-wrapper {
     display: flex;
-    margin-left: 13.7em;
-    max-width: 920px;
+    margin-left: 1.7em;
+    min-width: 910px;
     background-color: #3E3D3D;
     border:1px solid #515050;
     margin-top: 2em;
+    text-align: center;
     
 }
 

@@ -13,12 +13,12 @@ export class ApiService {
 
   getReleases() {
     const {mainUrl} = environment;
-    return this.http.get<Releases[]>(`${mainUrl}/releases`)
+    return this.http.get<Releases[]>(`${mainUrl}/data/releases`)
   }
 
   getArtist() {
     const {mainUrl} = environment;
-    return this.http.get<Artists[]>(`${mainUrl}/artists`);
+    return this.http.get<Artists[]>(`${mainUrl}/data/artists`);
 
   }
 }

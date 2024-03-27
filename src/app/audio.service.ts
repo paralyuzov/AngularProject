@@ -26,6 +26,8 @@ export class AudioService {
   public duration = '00:00:00';
   public radioValue = 0;
   public seek = 0;
+  public artistName = '';
+  public songName = '';
 
   streamObserver(url: string) {
     return new Observable((observer) => {
@@ -78,8 +80,10 @@ export class AudioService {
     this.audioObj.volume = Number(ev);
   }
 
-  openFile(url: string) {
+  openFile(url: string, song: string, artist: string) {
     this.streamObserver(url).subscribe((event) => {});
+    this.artistName = artist;
+    this.songName = song;
   }
 
   play() {
@@ -99,6 +103,4 @@ export class AudioService {
     const momentTime = time * 1000;
     return moment.utc(momentTime).format(format);
   }
-
-  
 }

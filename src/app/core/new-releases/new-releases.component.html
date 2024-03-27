@@ -11,7 +11,7 @@
           <p class="artist">{{ realese.artist }}</p>
           <p class="label">{{ realese.label }}</p>
           <div class="buttons">
-            <i class="fa-solid fa-play" (click)="loadFile(realese.audioUrl)"></i>
+            <i class="fa-solid fa-play" (click)="loadFile(realese.audioUrl,realese.songName,realese.artist)"></i>
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>

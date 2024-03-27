@@ -1,15 +1,9 @@
-<div class="charts">
-  <div class="wrapper">
+<div class="wrapper">
+  <app-authenticate>
     <app-header></app-header>
     <div class="main">
       <app-aside></app-aside>
-      <app-new-releases></app-new-releases>
-      <app-charts></app-charts>
-      <app-top10></app-top10>
-    
+      <router-outlet></router-outlet>
     </div>
-    <app-artists></app-artists>
-    <app-audio-player></app-audio-player>
-  </div>
-  
+  </app-authenticate>
 </div>

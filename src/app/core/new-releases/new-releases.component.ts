@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
 import { AudioService } from 'src/app/audio.service';
 import { Releases } from 'src/app/types/releases';
@@ -10,7 +10,6 @@ import { Releases } from 'src/app/types/releases';
 })
 export class NewReleasesComponent implements OnInit {
   releasesList: Releases[] = [];
-
   constructor(private api: ApiService, private audio: AudioService) {
   }
 
@@ -21,7 +20,7 @@ export class NewReleasesComponent implements OnInit {
     });
   }
 
-  loadFile(url: string) {
-    this.audio.openFile(url);
+  loadFile(url: string,song:string,artist:string) {
+    this.audio.openFile(url,song,artist);
   }
 }

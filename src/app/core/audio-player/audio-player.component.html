@@ -1,6 +1,6 @@
 <div class="player">
-    <span>Song Name</span>
-    <span>Artist</span>
+    <span class="song">{{songName}}</span>
+    <span class="artist">{{artistName}}</span>
     <div class="current-time">
         <span>{{currentTime}}</span>
         <input type="range" min="0" step="any" max="{{radioValue}}" value="0" [value]="seekValue" #seek (input)="seekTo(seek.value)">

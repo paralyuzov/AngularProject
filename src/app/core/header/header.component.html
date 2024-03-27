@@ -1,25 +1,30 @@
 <nav>
-    <div class="logo">
-        <a href="/" class="logo-text"><i class="fa-solid fa-barcode fa-rotate-270"></i>Music Library</a>
-    </div>
-        
-    <div class="options">
-        <ul>
-            <li><a href="/genres">Genres</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/artists">Artists</a></li>
-            <li><a href="/charts">Charts</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
-    </div>
-        
+  <div class="logo">
+    <a href="/home" class="logo-text"
+      ><i class="fa-solid fa-barcode fa-rotate-270"></i>Music Library</a
+    >
+  </div>
 
-    <div class="register">
-        <ul>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-        </ul>
-     </div>
-         
+  <div class="options">
+    <ul>
+      <li><a href="/genres">Genres</a></li>
+      <li><a href="/news">News</a></li>
+      <li><a href="/artists">Artists</a></li>
+      <li><a href="/charts">Charts</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+
+  <div class="register">
+    <ul *ngIf="!isLoggedIn">
+      <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink="/register">Register</a></li>
+    </ul>
+    <ul *ngIf="isLoggedIn">
+      <li>
+        <p class="username">Hello,{{ userName }}</p>
+      </li>
+      <i class="fa-solid fa-right-from-bracket" (click)="Onlogout()"></i>
+    </ul>
+  </div>
 </nav>
-

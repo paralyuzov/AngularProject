@@ -8,14 +8,29 @@ import { ArtistsComponent } from './artists/artists.component';
 import { ChartsComponent } from './charts/charts.component';
 import { Top10Component } from './top10/top10.component';
 import { AudioPlayerComponent } from './audio-player/audio-player.component';
-
-
+import { MainComponent } from './main/main.component';
 
 @NgModule({
-  declarations: [HeaderComponent, AsideComponent, NewReleasesComponent, ArtistsComponent, ChartsComponent, Top10Component, AudioPlayerComponent],
-  imports: [
-    CommonModule,RouterModule
+  declarations: [
+    HeaderComponent,
+    AsideComponent,
+    NewReleasesComponent,
+    ArtistsComponent,
+    ChartsComponent,
+    Top10Component,
+    AudioPlayerComponent,
+    MainComponent,
   ],
-  exports:[HeaderComponent,AsideComponent,NewReleasesComponent,ArtistsComponent,ChartsComponent,Top10Component,AudioPlayerComponent]
+  imports: [CommonModule, RouterModule],
+  exports: [
+    HeaderComponent,
+    AsideComponent,
+    NewReleasesComponent,
+    ArtistsComponent,
+    ChartsComponent,
+    Top10Component,
+    AudioPlayerComponent,
+    MainComponent,
+  ],
 })
-export class CoreModule { }
+export class CoreModule {}

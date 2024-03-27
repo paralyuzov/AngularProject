@@ -27,6 +27,14 @@ export class AudioPlayerComponent {
     return this.audio.currentTime;
   }
 
+  public get songName(): string {
+    return this.audio.songName;
+  }
+
+  public get artistName(): string {
+    return this.audio.artistName;
+  }
+
   constructor(private audio: AudioService) {}
 
   play(): void {
