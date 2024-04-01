@@ -1,0 +1,64 @@
+.wrapper {
+    margin: 3em;
+    width: 990px;
+}
+
+.card-holder {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.top10{
+    width: 300px;
+    float: right;
+    position: relative;
+    left: 129px;
+    
+}
+
+.audio-player {
+    padding-top: 1em;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background-color: #3E3D3D;
+    border: 1px solid;
+    border-color: #646464;
+}
+
+.media img {
+    max-width: 300px;
+}
+
+
+
+.info-card p {
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.info-card .chart-tittle {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-list {
+    color:#fff;
+}
+
+.fa-list:hover {
+    color:#a6ff14;
+}
+

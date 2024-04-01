@@ -1,1 +1,45 @@
-<p>add-song works!</p>
+<div class="add-song-container">
+  <div class="form">
+    <form class="add-song-form register" [formGroup]="form" (ngSubmit)="add()">
+      <input type="text" placeholder="artist" formControlName="artist" />
+      <div  *ngIf="form.get('artist')?.invalid && form.get('artist')?.touched">
+        <div *ngIf="form.get('artist')?.errors?.['required']">
+          <p class="error">Artist name is required.</p>
+        </div>
+      </div>
+      <input type="text" placeholder="track name" formControlName="track" />
+      <div  *ngIf="form.get('track')?.invalid && form.get('track')?.touched">
+        <div *ngIf="form.get('track')?.errors?.['required']">
+          <p class="error">Track name is required.</p>
+        </div>
+      </div>
+      <input type="text" placeholder="label" formControlName="label" />
+      <div  *ngIf="form.get('label')?.invalid && form.get('label')?.touched">
+        <div *ngIf="form.get('label')?.errors?.['required']">
+          <p class="error">Label name is required.</p>
+        </div>
+      </div>
+      <input type="url" placeholder="image url" formControlName="image" />
+      <div *ngIf="form.get('image')?.invalid && form.get('image')?.touched">
+        <div *ngIf="form.get('image')?.errors?.['required']">
+          <p class="error">Image url is required.</p>
+        </div>
+        <div *ngIf="form.get('image')?.errors?.['pattern']">
+          <p class="error">The link must start with "https://..../___.jpg"</p>
+          <p class="error">The format must be JPG!</p>
+        </div>
+      </div>
+      <input type="url" placeholder="audio url" formControlName="audio" />
+      <div *ngIf="form.get('audio')?.invalid && form.get('audio')?.touched">
+        <div *ngIf="form.get('audio')?.errors?.['required']">
+          <p class="error">Audio url is required.</p>
+        </div>
+        <div *ngIf="form.get('audio')?.errors?.['pattern']">
+          <p class="error">The link must start with "https://..../___.mp3"</p>
+          <p class="error">The format must be MP3!</p>
+        </div>
+      </div>
+      <button [disabled]="form.invalid" [style]="{backgroundColor: form.invalid? 'black' : ''}">Add Song</button>
+    </form>
+  </div>
+</div>

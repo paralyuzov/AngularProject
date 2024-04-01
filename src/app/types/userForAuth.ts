@@ -9,6 +9,7 @@ export interface userForAuth {
   name: string;
   ___class: string;
   blUserLocale: string;
+  'user-token': string ;
   updated: number | null;
   email: string;
   objectId: string;

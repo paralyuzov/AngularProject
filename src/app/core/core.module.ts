@@ -9,6 +9,9 @@ import { ChartsComponent } from './charts/charts.component';
 import { Top10Component } from './top10/top10.component';
 import { AudioPlayerComponent } from './audio-player/audio-player.component';
 import { MainComponent } from './main/main.component';
+import { CurrentChartComponent } from './charts/current-chart/current-chart.component';
+import { CoreRoutingModule } from './core-routing.module';
+import { MainChartComponent } from './charts/main-chart/main-chart.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { MainComponent } from './main/main.component';
     Top10Component,
     AudioPlayerComponent,
     MainComponent,
+    CurrentChartComponent,
+    MainChartComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule,CoreRoutingModule],
   exports: [
     HeaderComponent,
     AsideComponent,

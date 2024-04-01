@@ -1,0 +1,95 @@
+h3,span,p {
+    font-family: "JURA",sans-serif;
+    color:#fff;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 2em;
+   
+}
+
+
+.info {
+    display: flex;
+    border-bottom: 2px solid rgb(119, 119, 119);
+    padding-bottom: 2em;
+}
+
+.media img {
+    max-width: 300px;
+}
+
+.chart-info {
+    padding-left: 2em;
+ 
+}
+
+.tracks {
+    background-color: #3E3D3D;
+    color:#fff;
+}
+
+.card-track {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    border-bottom: 1px solid rgb(124, 123, 123);
+}
+
+.media-track img {
+    max-width: 60px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.chart-tittle {
+    color:#FFF;
+    font-family: JURA,sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.artist {
+    color:#fff;
+    font-family: "Jura",sans-serif;
+    font-size: 26px;
+}
+
+.date {
+    font-size: 14px;
+    color:#919090;
+}
+
+.genres {
+    font-size: 14px;
+    color:#919090;
+}
+
+.option {
+    font-size: 16px;
+    font-style: italic;
+    color: #FFF;
+}
+
+.track-artist {
+    font-weight: bold;
+}
+
+.fa-play:hover {
+    color:#a6ff14;
+}
+
+.fa-plus:hover {
+    color:#a6ff14;
+}
+
+.track-name {
+    font-size: 16px;
+}

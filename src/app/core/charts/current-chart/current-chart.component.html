@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="info">
+    <div class="media">
+      <img
+        src="{{chart.imageUrl}}"
+        alt="pic"
+      />
+    </div>
+    <div class="chart-info">
+      <p class="chart-tittle">{{chart.name}}</p>
+      <p class="artist">{{chart.artist}}</p>
+      <p class="date">Date Created: <span class="option">{{chart.created | date}}</span></p>
+      <p class="genres">Genres: <span class="option">{{chart.gengres}}</span></p>
+    </div>
+  </div>
+  <h3>Tracks</h3>
+  <div class="tracks">
+    <div class="card-track" *ngFor="let track of chart.collection,let i = index">
+      <div class="media-track">
+        <img
+          src="{{track.imageUrl}}"
+          alt=""
+        />
+      </div>
+      <span>{{i+1}}</span>
+      <div class="buttons">
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <p class="track-artist">{{track.artist}}</p>
+      <p class="track-name">{{track.songName}}</p>
+      <p class="label">{{track.label}}</p>
+    </div>
+  </div>
+</div>
+<app-audio-player></app-audio-player>

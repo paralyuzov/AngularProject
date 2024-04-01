@@ -5,12 +5,13 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AddSongComponent } from './add-song/add-song.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { AuthActivate } from 'src/guards/auth.activate';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'add', component: AddSongComponent },
+  { path: 'add', component: AddSongComponent ,canActivate:[AuthActivate]},
   {path:'playlist',component:PlaylistComponent}
 ];
 

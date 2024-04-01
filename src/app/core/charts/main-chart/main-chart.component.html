@@ -1,0 +1,26 @@
+<div class="top10">
+    <app-top10></app-top10>
+  </div>
+<div class="wrapper">
+  <div class="card-holder">
+    <div *ngFor="let chart of chartList" class="card-box">
+      <div class="media">
+        <img src="{{ chart.imageUrl }}" alt="pic" />
+      </div>
+      <div class="info-card">
+        <p class="chart-tittle">{{ chart.name }}</p>
+        <p class="artist">{{ chart.artist }}</p>
+        <a routerLink="{{ chart.objectId }}"
+          ><i class="fa-solid fa-list"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="audio-player">
+    <app-audio-player></app-audio-player>
+  </div>
+      
+</div>
+
+
+

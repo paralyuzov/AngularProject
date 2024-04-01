@@ -3,22 +3,30 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Releases } from './types/releases';
 import { Artists } from './types/artists';
+import { Charts } from './types/charts';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+  mainUrl = environment.mainUrl
 
   constructor(private http:HttpClient) { }
 
   getReleases() {
-    const {mainUrl} = environment;
-    return this.http.get<Releases[]>(`${mainUrl}/data/releases`)
+    return this.http.get<Releases[]>(`${this.mainUrl}/data/releases`)
   }
 
   getArtist() {
-    const {mainUrl} = environment;
-    return this.http.get<Artists[]>(`${mainUrl}/data/artists`);
+    return this.http.get<Artists[]>(`${this.mainUrl}/data/artists`);
 
+  }
+
+  getCharts() {
+    return this.http.get<Charts[]>(`${this.mainUrl}/data/charts`);
+  }
+
+  getChartId(id:string) {
+    return this.http.get<Charts>(`${this.mainUrl}/data/charts/${id}`);
   }
 }

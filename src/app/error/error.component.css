@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 21em;
+    width: 500px;
+}
+
+
+.error {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Jura",sans-serif;
+    color:#FFF;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Jura",sans-serif;
+    font-style: italic;
+}
+
+a {
+    color: #1b1b1b;
+    text-decoration: none;
+    background-color: #404040;
+    padding: 0.5em;
+    margin-top: 1.5em;
+}
+
+a:hover {
+    background-color: #a6ff14; 
+}

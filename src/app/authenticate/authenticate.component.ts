@@ -11,9 +11,8 @@ export class AuthenticateComponent implements OnInit {
   isAuthenticating = true;
 
   ngOnInit(): void {
-    this.userService.getUserLogin().subscribe({
-      next: (x) => {
-        console.log(this.userService.isLogged)
+    this.userService.getUserProfile().subscribe({
+      next: () => {
         this.isAuthenticating = false;
       },
       error: () => {

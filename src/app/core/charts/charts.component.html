@@ -2,55 +2,18 @@
   <p class="tittle">Charts</p>
   <div class="card-wrapper">
     <div class="card-holder">
-      <div class="card-box">
-        <div class="media">
-          <img
-            src="https://geo-media.beatport.com/image_size/500x500/6e2996e8-aa11-4ec9-806c-3ff98b27d724.jpg"
-            alt="pic"
-          />
-        </div>
-        <div class="info-card">
-          <p class="chart-tittle">NTO x Beatport</p>
-          <p class="artist">Solu</p>
-        </div>
-      </div>
 
-      <div class="card-box">
+      <div *ngFor="let chart of chartList.slice(0,4)" class="card-box">
         <div class="media">
           <img
-            src="https://geo-media.beatport.com/image_size/500x500/ab5de8c7-fd39-46c4-965b-077ffd079203.jpg"
+            src="{{chart.imageUrl}}"
             alt="pic"
           />
         </div>
         <div class="info-card">
-          <p class="chart-tittle">Distant Present</p>
-          <p class="artist">Mia Mendi</p>
-        </div>
-      </div>
-
-      <div class="card-box">
-        <div class="media">
-          <img
-            src="https://geo-media.beatport.com/image_size/500x500/025d4ba1-f9f7-480f-9de7-adefa933eaed.jpg"
-            alt="pic"
-          />
-        </div>
-        <div class="info-card">
-          <p class="chart-tittle">You Don't Want This Chart</p>
-          <p class="artist">Solu</p>
-        </div>
-      </div>
-
-      <div class="card-box">
-        <div class="media">
-          <img
-            src="https://geo-media.beatport.com/image_size/500x500/94b41ad0-9ea8-4064-b328-dc3bd2000e36.jpg"
-            alt="pic"
-          />
-        </div>
-        <div class="info-card">
-          <p class="chart-tittle">NTO x Beatport</p>
-          <p class="artist">Solu</p>
+          <p class="chart-tittle">{{chart.name}}</p>
+          <p class="artist">{{chart.artist}}</p>
+          <a routerLink="/charts/{{chart.objectId}}"><i class="fa-solid fa-list"></i></a>
         </div>
       </div>
     </div>
