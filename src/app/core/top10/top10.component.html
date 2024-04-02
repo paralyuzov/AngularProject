@@ -18,8 +18,8 @@
           <p class="song">{{ list.songName }}</p>
         </div>
         <div class="buttons">
-          <i class="fa-solid fa-play"></i>
-          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-play" (click)="loadFile(list.audioUrl,list.songName,list.artist)"></i>
+          <i class="fa-solid fa-plus" (click)="addToPlaylist(list.artist,list.audioUrl,list.imageUrl,list.label,list.songName)"></i>
         </div>
       </div>
     </div>

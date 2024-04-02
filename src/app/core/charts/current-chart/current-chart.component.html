@@ -24,8 +24,8 @@
       </div>
       <span>{{i+1}}</span>
       <div class="buttons">
-        <i class="fa-solid fa-play"></i>
-        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-play" (click)="loadFile(track.audioUrl,track.songName,track.artist)"></i>
+        <i class="fa-solid fa-plus" (click)="addToPlaylist(track.artist,track.audioUrl,track.imageUrl,track.label,track.songName)"></i>
       </div>
       <p class="track-artist">{{track.artist}}</p>
       <p class="track-name">{{track.songName}}</p>

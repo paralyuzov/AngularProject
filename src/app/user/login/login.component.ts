@@ -30,7 +30,7 @@ export class LoginComponent {
         this.router.navigate(["/home"]);
       },
       error:(err) => {
-        console.log(err);
+        window.alert("Invalid email or password!");
       }
     })
   }

@@ -1,5 +1,8 @@
 <div class="add-song-container">
   <div class="form">
+    <div class="pic">
+      <img src="https://t4.ftcdn.net/jpg/01/06/47/61/360_F_106476142_zMZkkTkhMeq0DIjV20oJI00e3QXLYIGN.jpg" alt="">
+    </div>
     <form class="add-song-form register" [formGroup]="form" (ngSubmit)="add()">
       <input type="text" placeholder="artist" formControlName="artist" />
       <div  *ngIf="form.get('artist')?.invalid && form.get('artist')?.touched">

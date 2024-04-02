@@ -1,6 +1,7 @@
 .wrapper {
     margin: 3em;
     width: 990px;
+    min-height: 900px;
 }
 
 .card-holder {

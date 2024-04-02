@@ -1,4 +1,4 @@
-export interface Releases {
+export interface Playlists {
   songName: string;
   audioUrl: string;
   artist: string;
@@ -9,7 +9,4 @@ export interface Releases {
   ownerId: string;
   updated: number;
   objectId: string;
-  likes:string[];
 }
-
-

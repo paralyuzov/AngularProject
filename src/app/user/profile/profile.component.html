@@ -1,1 +1,29 @@
-<p>profile works!</p>
+<div class="register-container">
+    <div class="form">
+        <div class="img">
+            <img src="https://imgv3.fotor.com/images/blog-richtext-image/10-profile-picture-ideas-to-make-you-stand-out.jpg" alt="profile">
+        </div>
+      <form class="login-form register" [formGroup]="form" (ngSubmit)="onEdit()">
+        <p>username:</p>
+        <input type="text" placeholder="username" [value]="profileDitails.name" formControlName="username" />
+        <div  *ngIf="form.get('username')?.invalid && form.get('username')?.touched">
+            <div *ngIf="form.get('username')?.errors?.['required']">
+              <p class="error">Username is required.</p>
+            </div>
+          </div>
+        <p>email:</p>
+        <input type="email" placeholder="email" [value]="profileDitails.email" formControlName="email" />
+        <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+            <div *ngIf="form.get('email')?.errors?.['required']">
+              <p class="error">Email is required.</p>
+            </div>
+            <div *ngIf="form.get('email')?.errors?.['email']">
+              <p class="error">Please enter a valid email address.</p>
+            </div>
+          </div>
+       
+        <button [disabled]="form.invalid" [style]="{backgroundColor: form.invalid? 'black' : ''}">Edit</button>
+      </form>
+      <button (click)="onCancel()">Cancel</button>
+    </div>
+  </div>

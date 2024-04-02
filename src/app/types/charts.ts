@@ -11,7 +11,7 @@ export interface Charts {
   objectId: string;
 }
 
-interface Collection {
+export interface Collection {
   label: string;
   artist: string;
   audioUrl: string;

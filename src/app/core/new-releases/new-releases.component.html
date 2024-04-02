@@ -12,7 +12,8 @@
           <p class="label">{{ realese.label }}</p>
           <div class="buttons">
             <i class="fa-solid fa-play" (click)="loadFile(realese.audioUrl,realese.songName,realese.artist)"></i>
-            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-plus" (click)="addToPlaylist(realese.artist,realese.audioUrl,realese.imageUrl,realese.label,realese.songName)"></i>
+            <i class="fa-solid fa-heart" (click)="like(realese.objectId)"></i>
           </div>
         </div>
       </div>

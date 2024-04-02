@@ -7,6 +7,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { CoreModule } from '../core/core.module';
 
 
 
@@ -19,7 +20,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     LoginComponent
   ],
   imports: [
-    CommonModule,UserRoutingModule,FormsModule,ReactiveFormsModule
+    CommonModule,UserRoutingModule,FormsModule,ReactiveFormsModule,CoreModule
   ]
 })
 export class UserModule { }

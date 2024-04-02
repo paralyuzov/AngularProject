@@ -12,6 +12,8 @@ import { MainComponent } from './main/main.component';
 import { CurrentChartComponent } from './charts/current-chart/current-chart.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { MainChartComponent } from './charts/main-chart/main-chart.component';
+import { MainArtistsComponent } from './artists/main-artists/main-artists.component';
+import { CurrentArtistComponent } from './artists/current-artist/current-artist.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { MainChartComponent } from './charts/main-chart/main-chart.component';
     MainComponent,
     CurrentChartComponent,
     MainChartComponent,
+    MainArtistsComponent,
+    CurrentArtistComponent,
   ],
   imports: [CommonModule, RouterModule,CoreRoutingModule],
   exports: [

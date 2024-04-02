@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Releases } from './types/releases';
 import { Artists } from './types/artists';
 import { Charts } from './types/charts';
+
 
 @Injectable({
   providedIn: 'root'
@@ -29,4 +30,10 @@ export class ApiService {
   getChartId(id:string) {
     return this.http.get<Charts>(`${this.mainUrl}/data/charts/${id}`);
   }
+
+  getArtistId(id:string) {
+    return this.http.get<Artists>(`${this.mainUrl}/data/artists/${id}`)
+  }
+
+  
 }

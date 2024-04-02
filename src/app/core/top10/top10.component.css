@@ -33,7 +33,6 @@
 }
 
 .card:hover {
-    cursor: pointer;
     box-shadow: #f6f6f6 0px 0px 0px 1px;
 }
 
@@ -68,6 +67,7 @@
 }
 
 .fa-play {
+    cursor: pointer;
     color:#d0cdcd;  
 }
 
@@ -76,6 +76,7 @@
 }
 
 .fa-plus {
+    cursor: pointer;
     color:#d0cdcd;
 }
 

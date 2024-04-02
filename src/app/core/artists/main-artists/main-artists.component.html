@@ -1,0 +1,17 @@
+<div class="artists-wrapper">
+  <div class="artist-box">
+    <div class="artist-card" *ngFor="let artist of artistsList">
+      <div class="media">
+        <img
+          src="{{artist.imageUrl}}"
+          alt="pic"
+        />
+      </div>
+      <a class="artist" href="artists/{{artist.objectId}}">{{artist.name}}</a>
+    </div>
+
+  </div>
+  <div>
+
+</div>
+  

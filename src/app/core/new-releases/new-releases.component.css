@@ -80,6 +80,15 @@
     color:#a6ff14;
 }
 
+.fa-heart {
+    color:#d0cdcd; 
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color:#ff0505; 
+}
+
 .buttons {
     display: flex;
     gap:0.5em;
