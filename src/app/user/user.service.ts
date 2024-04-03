@@ -32,7 +32,7 @@ export class UserService implements OnDestroy {
         password,
         name,
       })
-      .pipe(tap((user) => this.user$$.next(user)));
+      ;
   }
 
   login(email: string, password: string) {
@@ -87,7 +87,9 @@ export class UserService implements OnDestroy {
     const userId = localStorage.getItem('userId');
     const header = new HttpHeaders({'user-token':`${token}`});
     const putData = {'name':name,'email':email};
-    return this.http.put<userForAuth>(`/api/users/${userId}`,putData,{headers:header});
+    return this.http.put<userForAuth>(`/api/users/${userId}`,putData,{headers:header}).pipe(tap((user) => {
+      this.user$$.next(user);
+    }));
   }
 
   addSong(

@@ -41,6 +41,7 @@ export class ProfileComponent implements OnInit {
 
     const { username, email } = this.form.value;
     this.userService.updateUser(username!, email!).subscribe(() => {
+      
       window.alert('You have update your profile!');
       if (email != this.profileDitails.email) {
         this.userService.logout();

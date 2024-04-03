@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Releases } from './types/releases';
 import { Artists } from './types/artists';
 import { Charts } from './types/charts';
+import { News } from './types/news';
 
 
 @Injectable({
@@ -33,6 +34,10 @@ export class ApiService {
 
   getArtistId(id:string) {
     return this.http.get<Artists>(`${this.mainUrl}/data/artists/${id}`)
+  }
+
+  getNews() {
+    return this.http.get<News[]>(`${this.mainUrl}/data/news`)
   }
 
   

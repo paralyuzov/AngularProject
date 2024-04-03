@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="news-card" *ngFor="let article of newsList">
+        <div class="media">
+            <img src="{{article.imageUrl}}" alt="">
+        </div>
+        <div class="tittle">
+            <h4>{{article.tittle}}</h4>
+            <p>{{article.subtittle}}</p>
+            <p class="author">{{article.author}}</p>
+        </div>
+    </div>
+</div>
